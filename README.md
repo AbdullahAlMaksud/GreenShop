@@ -13,17 +13,13 @@ Welcome to GreenShop, your one-stop destination for fresh and organic groceries.
 ## Installation
 
 1. Clone the repository:
-   ```git clone https://github.com/yourusername/greenshop.git
-   ```
+   ```git clone https://github.com/yourusername/greenshop.git```
 2. Navigate to the project directory:
-   ```cd greenshop
-   ```
+   ```cd greenshop```
 3. Install dependencies:
-   ```npm install
-   ```
+   ```npm install```
 4. Start the development server:
-   ```npm start
-   ```
+   ```npm start```
 
 ## Usage
 
