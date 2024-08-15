@@ -31,15 +31,16 @@ const ProductCard = ({ product }) => {
                 <div className='flex flex-col justify-center items-center px-5 text-center'>
 
                     <h2 className='font-bold'>{product.name}</h2>
-                    <p className='text-xs'>{product.description}</p>
+                    <p className='text-xs hidden md:flex'>{product.description}</p>
                     <div className='bg-white/40 px-5 py-2 rounded-lg border border-border mt-2 text-xs font-sans'>
-                    <p className=''>Arrived: {product.arrivalDate}</p>
-                    <p className=''>Rating: {product.rating}</p>
-                    <p className=''>Price: ${product.price}/{product.pricePerUnit}</p>
+                    <p className=''><span className='font-semibold'>Arrived:</span> <br className='flex md:hidden'/> {product.arrivalDate}</p>
+                    <p className=''><span className='font-semibold'>Rating: </span><br className='flex md:hidden'/>  {product.rating}</p>
+                    <p className=''><span className='font-semibold'>Price:</span> <br className='flex md:hidden'/>  ${product.price}/{product.pricePerUnit}</p>
                     </div>
-                    <div className='flex mt-5 gap-2 items-center justify-center'>
-                    <Button className='bg-success max-h-10'>Add to Cart</Button>
-                    <Button className='max-h-10'><BiDetail className='text-lg'/></Button>
+                    <div className='flex mt-2 md:mt-5 gap-2 items-center justify-center'>
+                    <Button className='bg-success max-h-10 px-10 py-2 font-normal md:hidden flex'>+</Button>
+                    <Button className='bg-success max-h-10 px-5 py-2 lg:px-10 lg:py-3 font-normal hidden md:flex'>Add to Cart</Button>
+                    <Button className='max-h-10 lg:px-3 lg:py-3 px-2 py-2'><BiDetail className='text-sm md:text-lg'/></Button>
                     </div>
                 </div>
 
