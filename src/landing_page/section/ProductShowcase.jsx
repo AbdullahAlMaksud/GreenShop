@@ -43,16 +43,16 @@ const ProductShowcase = () => {
                 subheading={'Browse our curated collection of organic fruits, vegetables, and pantry essentials, all sourced from trusted farms and suppliers.'}
             />
             <div className='flex flex-col lg:flex-row justify-between items-center mt-5 mb-5 text-s gap-2 text-center text-sm lg:text-md rounded-lg px-4 py-4 shadow-md'>
-                <div>
-                    <button onClick={() => setFilterCriteria('All Products')} className=' rounded-md text-green-900 border-green-700 border hover:shadow-md shadow-black px-3 mr-2'>All Products</button> |
-                    <button onClick={() => setFilterCriteria('Vegetables')} className=' rounded-md text-green-900 border-green-700 border hover:shadow-md shadow-black px-3 mx-2'>Vegetables</button>|
-                    <button onClick={() => setFilterCriteria('Fruits')} className=' rounded-md text-green-900 border-green-700 border hover:shadow-md shadow-black px-3 mx-2'>Fruits</button>|
-                    <button onClick={() => setFilterCriteria('Spinach')} className=' rounded-md text-green-900 border-green-700 border hover:shadow-md shadow-black px-3 mx-2'>Spinach</button>|
-                    <button onClick={() => setFilterCriteria('Bakery')} className=' rounded-md text-green-900 border-green-700 border hover:shadow-md shadow-black px-3 mx-2'>Bakery</button>|
-                    <button onClick={() => setFilterCriteria('Dairy')} className=' rounded-md text-green-900 border-green-700 border hover:shadow-md shadow-black px-3 mx-2'>Dairy</button>|
-                    <button onClick={() => setFilterCriteria('Nuts')} className=' rounded-md text-green-900 border-green-700 border hover:shadow-md shadow-black px-3 mx-2'>Nuts</button>|
-                    <button onClick={() => setFilterCriteria('Pantry')} className=' rounded-md text-green-900 border-green-700 border hover:shadow-md shadow-black px-3 mx-2'>Pantry</button>|
-                    <button onClick={() => setFilterCriteria('Sale')} className=' rounded-md text-green-900 border-green-700 border hover:shadow-md shadow-black px-3 mx-2'>Sale</button>
+                <div className='dark:text-white'>
+                    <button onClick={() => setFilterCriteria('All Products')} className=' rounded-md text-green- dark:text-white text-xs py-0.5 lg:text-sm border-green-700 mt-2 lg:mt-0 border hover:shadow-md shadow-black px-3 mr-2'>All Products</button> |
+                    <button onClick={() => setFilterCriteria('Vegetables')} className=' rounded-md text-green- dark:text-white text-xs py-0.5 lg:text-sm border-green-700 mt-2 lg:mt-0 border hover:shadow-md shadow-black px-3 mx-2'>Vegetables</button>|
+                    <button onClick={() => setFilterCriteria('Fruits')} className=' rounded-md text-green- dark:text-white text-xs py-0.5 lg:text-sm border-green-700 mt-2 lg:mt-0 border hover:shadow-md shadow-black px-3 mx-2'>Fruits</button>|
+                    <button onClick={() => setFilterCriteria('Spinach')} className=' rounded-md text-green- dark:text-white text-xs py-0.5 lg:text-sm border-green-700 mt-2 lg:mt-0 border hover:shadow-md shadow-black px-3 mx-2'>Spinach</button>|
+                    <button onClick={() => setFilterCriteria('Bakery')} className=' rounded-md text-green- dark:text-white text-xs py-0.5 lg:text-sm border-green-700 mt-2 lg:mt-0 border hover:shadow-md shadow-black px-3 mx-2'>Bakery</button>|
+                    <button onClick={() => setFilterCriteria('Dairy')} className=' rounded-md text-green- dark:text-white text-xs py-0.5 lg:text-sm border-green-700 mt-2 lg:mt-0 border hover:shadow-md shadow-black px-3 mx-2'>Dairy</button>|
+                    <button onClick={() => setFilterCriteria('Nuts')} className=' rounded-md text-green- dark:text-white text-xs py-0.5 lg:text-sm border-green-700 mt-2 lg:mt-0 border hover:shadow-md shadow-black px-3 mx-2'>Nuts</button>|
+                    <button onClick={() => setFilterCriteria('Pantry')} className=' rounded-md text-green- dark:text-white text-xs py-0.5 lg:text-sm border-green-700 mt-2 lg:mt-0 border hover:shadow-md shadow-black px-3 mx-2'>Pantry</button>|
+                    <button onClick={() => setFilterCriteria('Sale')} className=' rounded-md text-green- dark:text-white text-xs py-0.5 lg:text-sm border-green-700 mt-2 lg:mt-0 border hover:shadow-md shadow-black px-3 mx-2'>Sale</button>
                 </div>
                 <div className="w-60 text-left">
                     <Select label="Sorting" value={sortCriteria} onChange={(e) => setSortCriteria(e)}>

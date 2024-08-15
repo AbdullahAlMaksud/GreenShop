@@ -9,12 +9,12 @@ import Footer from './section/Footer';
 
 const LandingPage = () => {
     return (
-        <div className='dark:bg-gray-900'>
+        <div className='dark:bg-gray-900 dark:text-white'>
             <nav className='z-10 fixed w-full'>
             <Navigation />
             </nav>
 
-            <section className='z-10'>
+            <section className='z-10 dark:text-green-900'>
                 <Banner />
             </section>
             <section className='pt-10 z-10'>

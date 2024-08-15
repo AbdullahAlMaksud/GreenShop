@@ -6,7 +6,7 @@ import { IoCheckboxOutline } from 'react-icons/io5';
 
 const AboutUs = () => {
     return (
-        <div className='container w-11/12 mx-auto '>
+        <div className="w-11/12 mx-auto">
             <SectionHeading heading={'About Us'} subheading={'At GreenShop, we are passionate about bringing you the freshest and most natural products. Our dedication to organic farming and sustainable practices ensures that every item we offer is not only good for you but also kind to the planet. Discover the difference in every bite, as we work to make healthy living accessible and enjoyable for everyone.'} />
 
             <div className='font-serif'>

@@ -8,14 +8,13 @@ import { MdAttachMoney, MdCheck, MdDoneAll } from 'react-icons/md';
 
 const ProductCard = ({product}) => {
     return (
-        <div className='shadow-sm rounded-xl'>
+        <div className='shadow-sm rounded-xl hover:shadow-xl hover:shadow-black/20 hover:cursor-pointer'>
             <div className='bg-secondary/10 rounded-xl relative'>
                 <img src={product.image} className='h-32 lg:h-80 object-contain mx-auto py-2' alt="" />
                 {
                     product.sale===true ? <span className='absolute text-xs bg-red-400 rounded-xl px-3 text-white top-2 left-2'>Sale</span> : ""
                 }
             </div>
-
             <div className='pb-2'>
             <h2 className='text-center text-md font-semibold mt-2'>{product.name}</h2>
             <div className='flex gap-2 justify-center text-sm px-2'>
@@ -24,7 +23,6 @@ const ProductCard = ({product}) => {
             </div>
             <h2 className='text-center text-xs truncate ... mb-2 px-3'>{product.description}</h2>
             </div>
-
             <Button className='w-full bg-success'>Add to Cart</Button>
         </div>
     );
