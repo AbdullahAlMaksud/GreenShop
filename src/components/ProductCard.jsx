@@ -27,7 +27,7 @@ const ProductCard = ({ product }) => {
                     <h2 className='text-center text-xs truncate ... mb-2 px-3'>{product.description}</h2>
                 </div>
             </div>
-            <div className='absolute h-full w-full bg-green-400/40 items-center flex justify-center -bottom-20 duration-500 scroll-smooth group-hover:bottom-0 opacity-0 group-hover:opacity-100 hover:backdrop-blur-md rounded-xl'>
+            <div className='absolute h-full w-full bg-green-400/40 items-center flex justify-center -bottom-2 duration-1000 scroll-smooth group-hover:bottom-0 opacity-0 group-hover:opacity-100 hover:backdrop-blur-md rounded-xl'>
                 <div className='flex flex-col justify-center items-center px-5 text-center'>
 
                     <h2 className='font-bold'>{product.name}</h2>
